@@ -1,15 +1,22 @@
-import Link from "next/link";
+'use client';
 
 export default function Footer() {
   return (
-    <footer className="w-full py-8 px-6 md:px-12 lg:px-24 border-t border-blue-800 mt-16">
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-blue-300 text-sm">Powered by <span className="font-semibold">CustomerInsights.AI</span></p>
+    <footer className="bg-[#002373] py-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white py-2">
+         
+          <div className="flex items-center space-x-1">
+            <span className="text-white">Powered by</span>
+            <span>
+              <span className="text-[#FCB038] font-medium">ci</span>
+              <span className="text-[#0374BB] font-medium">ATHENA</span>
+            </span>
           </div>
-          <div>
-            <p className="text-blue-300 text-sm">Copyright © 2025 CustomerInsights.AI, Inc.</p>
+
+          
+          <div className="text-[#E6E6E6]">
+            Copyright 2025 CustomerInsights.AI, Inc
           </div>
         </div>
       </div>
