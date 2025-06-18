@@ -13,7 +13,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full min-h-[600px] px-6 md:px-12 lg:px-24 py-16">
+    <section className="w-full min-h-[500px] px-6 md:px-12 lg:px-24 py-16 "
+      style={{ background: "linear-gradient(359deg, #020B29 0.61%, #001E72 196.13%)" }}>
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-stretch gap-10 h-full">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -22,35 +23,36 @@ export default function Hero() {
           className="flex flex-col justify-center"
         >
           <div>
-          <h1 className="text-[72px] font-medium mb-4">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-400">LENS</span>
+          <h1 className="text-[72px] font-medium mb-0 leading-none">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#149DF3] via-[#D264C2] to-[#9352E5]">LENS</span>
           </h1>
-          <p className="mb-4 text-[14px] font-normal text-white">Powered by extensive U.S. LANDSCAPE™ application</p>
+          <p className="mt-1 mb-6 text-[12px] font-[300] text-white">Powered by generative AI, a ciPARTHENON™ application</p>
           
-          <h2 className="text-white text-[16px] leading-tight mb-6">
-            <span className="font-bold">LENS</span>
+          <h2 className="text-white text-[16px] leading-tight mb-6 font-[300]">
+            <span className="font-[700]">LENS</span>
             <span> (Landscape Evaluation and Sizing) allows you to </span><br />
-            <span className="font-bold">efficiently assess market landscape</span>
+            <span className="font-[700]">efficiently assess market landscape</span>
             <span> for any therapeutic </span><br />
-            <span className="font-bold">area using US claims data</span>
-            <span>.</span>
+            <span>area </span>
+            <span className="font-[700]">using US claims data</span>
+           
           </h2>
           
-          <div className="flex flex-wrap gap-4 mb-8">
+          <div className="flex flex-wrap gap-4 mb-4">
             <Button 
-              className="text-[#22AAFF] bg-[rgba(255,255,255,0.16)] border border-[#0075bb] hover:bg-white">
+              className="text-[#22AAFF] text-[14px] bg-[rgba(255,255,255,0.16)] border border-[#0075bb] hover:bg-white">
               Subscribe now
             </Button>
             <Button 
               variant="outline" 
-              className="text-white bg-[rgba(4,117,187,1)] border border-white hover:bg-white hover:text-[#22AAFF]"
+              className="text-white  text-[14px] bg-[rgba(4,117,187,1)] border border-white hover:bg-white hover:text-[#22AAFF]"
             >
               See pricing
             </Button>
           </div>
           </div>
           
-          <div className="flex items-center gap-2 bg-[#2A3554] rounded-[81px] px-4 py-2 w-fit cursor-pointer"
+          <div className="flex items-center gap-2 bg-[#2A3554] rounded-[81px] px-4 py-2 w-fit cursor-pointer "
             onClick={() => setShowVideo(true)}>
             <div className="bg-[#C08AE1] rounded-full p-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">

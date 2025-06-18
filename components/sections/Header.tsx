@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#01195D] backdrop-blur-md border-b border-slate-800">
+    <header className="w-full bg-[#01195D] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* CIAI Logo - Left */}
@@ -15,7 +15,7 @@ export default function Header() {
               alt="Customer Insights"
               width={200}
               height={40}
-              className="h-7 w-auto"
+              className="h-6 w-auto"
             />
           </div>
 
@@ -30,7 +30,7 @@ export default function Header() {
                 alt="Home"
                 width={120}
                 height={40}
-                className="h-7 w-auto"
+                className="h-6 w-auto"
               />
             </a>
           </div>
